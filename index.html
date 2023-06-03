@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+      }
+      input {
+        padding: 0.5rem;
+        width: 100%;
+      }
+      a {
+        text-decoration: none;
+        background-color: #000;
+        color: #fff;
+        padding: 0.5rem;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+    <title>Age In days</title>
+  </head>
+  <body>
+    <main>
+      <div class="input-wrapper">
+        <input
+          type="text"
+          class="first-name"
+          placeholder="Enter your first name"
+        />
+        <input
+          type="text"
+          class="last-name"
+          placeholder="Enter your last name"
+        />
+        <input type="number" class="age" placeholder="Enter your age" />
+        <a href="#" class="btn-result">Get Result</a>
+      </div>
+    </main>
+    <div class="display"></div>
+  </body>
+</html>
